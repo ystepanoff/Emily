@@ -1,5 +1,4 @@
 import re
-
 import requests
 
 
@@ -100,8 +99,8 @@ def basic_line_cleaning(lines):
 
 def main():
     url = "https://www.gutenberg.org/files/12242/12242-0.txt"
-    raw_file_path = "data/dickinson_raw.txt"
-    cleaned_file_path = "data/dickinson_clean.txt"
+    raw_file_path = "dickinson_raw.txt"
+    cleaned_file_path = "dickinson_clean.txt"
 
     download_dickinson_text(url, raw_file_path)
     with open(raw_file_path, "r", encoding="utf-8") as f:

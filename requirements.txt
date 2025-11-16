@@ -1,5 +1,4 @@
-requests==2.32.3
-tokenizers==0.21.0
-torch==2.5.1
-numpy==2.2.2
-click==8.1.8
+# Core runtime dependencies for training & inference
+# Pin torch loosely so CPU/MPS/GPU wheels can be selected per environment
+torch>=2.9.0,<2.10.0
+requests>=2.31.0
